@@ -33,7 +33,7 @@ def edge_detection(image):
     
     # Apply Canny edge detection
     # The paper uses a double threshold in the range [100, 200]
-    edges = cv2.Canny(blurred_image, 100, 200)
+    edges = cv2.Canny(blurred_image, 100, 150)
     
     return gray_image, blurred_image, edges
 
